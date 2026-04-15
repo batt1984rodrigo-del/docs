@@ -12,9 +12,9 @@ contentType: concepts
 
 ## Introduction
 
-You can use third-party coding agents alongside {% data variables.copilot.copilot_coding_agent %} to work asynchronously on your development tasks. You can assign an existing issue or give a prompt to an agent, which will work on the required changes and create a pull request. When the agent finishes, it will request a review from you, and you can leave pull request comments to ask the agent to iterate.
+You can use third-party coding agents alongside {% data variables.copilot.copilot_cloud_agent %} to work asynchronously on your development tasks. You can assign an existing issue or give a prompt to an agent, which will work on the required changes and create a pull request. When the agent finishes, it will request a review from you, and you can leave pull request comments to ask the agent to iterate.
 
-Coding agents are subject to the same security protections, mitigations, and limitations as {% data variables.copilot.copilot_coding_agent %}. To learn more about how you can use coding agents, see [AUTOTITLE](/copilot/concepts/agents/coding-agent/about-coding-agent).
+Coding agents are subject to the same security protections, mitigations, and limitations as {% data variables.copilot.copilot_cloud_agent %}. To learn more about how you can use coding agents, see [AUTOTITLE](/copilot/concepts/agents/cloud-agent/about-cloud-agent).
 
 ### Where you can use coding agents
 
@@ -44,6 +44,24 @@ The following third-party agents are supported on {% data variables.product.gith
 
 * [{% data variables.product.prodname_anthropic_claude %}](/copilot/concepts/agents/anthropic-claude)
 * [{% data variables.product.prodname_openai_codex %}](/copilot/concepts/agents/openai-codex)
+
+## AI models for third-party agents
+
+When starting a task with a third-party agent, you can select the AI model used by the agent. You may find that different models perform better, or provide more useful responses, depending on the type of task. For help deciding which model to use, see [AUTOTITLE](/copilot/reference/ai-models/model-comparison).
+
+You can also select **Auto**, which allows {% data variables.copilot.copilot_auto_model_selection %} to choose the best available model on your behalf. For more information, see [AUTOTITLE](/copilot/concepts/auto-model-selection).
+
+The following models are available for each agent:
+
+### {% data variables.product.prodname_openai_codex %}
+
+* Auto
+{% data reusables.copilot.openai-codex-agent-models %}
+
+### {% data variables.product.prodname_anthropic_claude %}
+
+* Auto
+{% data reusables.copilot.anthropic-claude-agent-models %}
 
 ## Usage costs
 

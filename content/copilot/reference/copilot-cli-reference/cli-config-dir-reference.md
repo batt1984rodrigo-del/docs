@@ -9,6 +9,8 @@ category:
   - Author and optimize with Copilot # Copilot discovery page
   - Configure Copilot CLI # Copilot CLI bespoke page
 contentType: reference
+docsTeamMetrics:
+  - copilot-cli
 ---
 
 {% data variables.copilot.copilot_cli_short %} stores its configuration, session history, logs, and customizations in a single directory on your machine. By default, this directory is `~/.copilot` (that is, `$HOME/.copilot`).
@@ -53,16 +55,16 @@ Common settings include:
 | `theme` | string | Color theme: `"auto"`, `"dark"`, or `"light"` |
 | `mouse` | boolean | Enable mouse support in alt screen mode (default: `true`) |
 | `banner` | string | Animated banner frequency: `"always"`, `"once"`, or `"never"` (default: `"once"`) |
-| `render_markdown` | boolean | Render markdown in responses (default: `true`) |
-| `screen_reader` | boolean | Enable screen reader optimizations (default: `false`) |
-| `auto_update` | boolean | Automatically download CLI updates (default: `true`) |
+| `renderMarkdown` | boolean | Render Markdown in responses (default: `true`) |
+| `screenReader` | boolean | Enable screen reader optimizations (default: `false`) |
+| `autoUpdate` | boolean | Automatically download CLI updates (default: `true`) |
 | `stream` | boolean | Stream responses token by token (default: `true`) |
 | `includeCoAuthoredBy` | boolean | Add Co-authored-by to agent-created commits (default: `true`) |
 | `respectGitignore` | boolean | Exclude gitignored files from the `@` file picker (default: `true`) |
 | `trusted_folders` | string[] | Folders where read/execute permission has been granted |
 | `allowed_urls` | string[] | URLs or domains allowed without prompting |
 | `denied_urls` | string[] | URLs or domains that are always denied |
-| `log_level` | string | Log verbosity: `"none"`, `"error"`, `"warning"`, `"info"`, `"debug"`, `"all"`, or `"default"` (default: `"default"`) |
+| `logLevel` | string | Log verbosity: `"none"`, `"error"`, `"warning"`, `"info"`, `"debug"`, `"all"`, or `"default"` (default: `"default"`) |
 | `disableAllHooks` | boolean | Disable all hooks (default: `false`) |
 | `hooks` | object | Inline user-level hook definitions |
 
@@ -73,7 +75,7 @@ For a full list of configuration settings, enter `copilot help config` in your t
 
 ### `mcp-config.json`
 
-Defines MCP (Model Context Protocol) servers available at the user level. These servers are available in all your sessions, regardless of which project directory you're in. Project-level MCP configurations (in `.mcp.json`, `.github/mcp.json`, or `.vscode/mcp.json`) take precedence over user-level definitions when server names conflict.
+Defines MCP (Model Context Protocol) servers available at the user level. These servers are available in all your sessions, regardless of which project directory you're in. Project-level MCP configurations (in `.mcp.json` or `.github/mcp.json`) take precedence over user-level definitions when server names conflict.
 
 For more information, see [AUTOTITLE](/copilot/how-tos/copilot-cli/customize-copilot/add-mcp-servers).
 
@@ -87,7 +89,7 @@ For more information, see [AUTOTITLE](/copilot/how-tos/copilot-cli/customize-cop
 
 Store personal custom skill definitions here. Each skill lives in a subdirectory containing a `SKILL.md` file—for example, `~/.copilot/skills/my-skill/SKILL.md`. Personal skills are available in all your sessions. Project-level skills take precedence over personal skills if they share the same name.
 
-For more information, see [AUTOTITLE](/copilot/how-tos/copilot-cli/customize-copilot/create-skills).
+For more information, see [AUTOTITLE](/copilot/how-tos/copilot-cli/customize-copilot/add-skills).
 
 ### `hooks/`
 

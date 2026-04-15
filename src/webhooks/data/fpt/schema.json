@@ -2833,6 +2833,16 @@
                                     "TEAM",
                                     "ROLE"
                                   ]
+                                },
+                                {
+                                  "type": "string",
+                                  "name": "mode",
+                                  "description": "<p>The bypass mode for the reviewer</p>",
+                                  "enum": [
+                                    "ALWAYS",
+                                    "EXEMPT"
+                                  ],
+                                  "default": "ALWAYS"
                                 }
                               ]
                             }
@@ -4964,6 +4974,16 @@
                                     "TEAM",
                                     "ROLE"
                                   ]
+                                },
+                                {
+                                  "type": "string",
+                                  "name": "mode",
+                                  "description": "<p>The bypass mode for the reviewer</p>",
+                                  "enum": [
+                                    "ALWAYS",
+                                    "EXEMPT"
+                                  ],
+                                  "default": "ALWAYS"
                                 }
                               ]
                             }
@@ -7096,6 +7116,16 @@
                                     "TEAM",
                                     "ROLE"
                                   ]
+                                },
+                                {
+                                  "type": "string",
+                                  "name": "mode",
+                                  "description": "<p>The bypass mode for the reviewer</p>",
+                                  "enum": [
+                                    "ALWAYS",
+                                    "EXEMPT"
+                                  ],
+                                  "default": "ALWAYS"
                                 }
                               ]
                             }
@@ -9239,6 +9269,16 @@
                                     "TEAM",
                                     "ROLE"
                                   ]
+                                },
+                                {
+                                  "type": "string",
+                                  "name": "mode",
+                                  "description": "<p>The bypass mode for the reviewer</p>",
+                                  "enum": [
+                                    "ALWAYS",
+                                    "EXEMPT"
+                                  ],
+                                  "default": "ALWAYS"
                                 }
                               ]
                             }
@@ -260205,6 +260245,16 @@
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
             },
             {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
+            },
+            {
               "type": "string",
               "name": "validity",
               "description": "<p>The token status as of the latest validity check.</p>",
@@ -261196,6 +261246,16 @@
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
             },
             {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
+            },
+            {
               "type": "string",
               "name": "validity",
               "description": "<p>The token status as of the latest validity check.</p>",
@@ -262050,6 +262110,16 @@
               "type": "string",
               "name": "secret_type_display_name",
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
             },
             {
               "type": "string",
@@ -262908,6 +262978,16 @@
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
             },
             {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
+            },
+            {
               "type": "string",
               "name": "validity",
               "description": "<p>The token status as of the latest validity check.</p>",
@@ -263764,6 +263844,16 @@
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
             },
             {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
+            },
+            {
               "type": "string",
               "name": "validity",
               "description": "<p>The token status as of the latest validity check.</p>",
@@ -264618,6 +264708,16 @@
               "type": "string",
               "name": "secret_type_display_name",
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
             },
             {
               "type": "string",
@@ -265611,6 +265711,16 @@
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
             },
             {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
+            },
+            {
               "type": "string",
               "name": "validity",
               "description": "<p>The token status as of the latest validity check.</p>",
@@ -266466,6 +266576,16 @@
               "type": "string",
               "name": "secret_type_display_name",
               "description": "<p>User-friendly name for the detected secret, matching the <code>secret_type</code>.\nFor a list of built-in patterns, see \"<a href=\"https://docs.github.com/code-security/secret-scanning/introduction/supported-secret-scanning-patterns#supported-secrets\">Supported secret scanning patterns</a>.\"</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider",
+              "description": "<p>The provider of the secret that was detected.</p>"
+            },
+            {
+              "type": "string or null",
+              "name": "provider_slug",
+              "description": "<p>The slug identifier for the provider of the secret that was detected.</p>"
             },
             {
               "type": "string",
@@ -268572,6 +268692,16 @@
                                 "TEAM",
                                 "ROLE"
                               ]
+                            },
+                            {
+                              "type": "string",
+                              "name": "mode",
+                              "description": "<p>The bypass mode for the reviewer</p>",
+                              "enum": [
+                                "ALWAYS",
+                                "EXEMPT"
+                              ],
+                              "default": "ALWAYS"
                             }
                           ]
                         }
