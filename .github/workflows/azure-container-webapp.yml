@@ -30,8 +30,12 @@ env:
   AZURE_WEBAPP_NAME: your-app-name  # set this to the name of your Azure Web App
 
 on:
-  push:
-    branches: [ "main" ]
+  # Only run manually. This workflow depends on the private
+  # ghcr.io/github/gh-base-image/gh-base-noble base image referenced in the
+  # Dockerfile (which is intended for GitHub's internal Moda production
+  # deployment) and on an Azure Web App configured with the placeholder
+  # AZURE_WEBAPP_NAME below. Automatic runs on push fail with 403 Forbidden
+  # when pulling the base image in forks or unconfigured environments.
   workflow_dispatch:
 
 permissions:
